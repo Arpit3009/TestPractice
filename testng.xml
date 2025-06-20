@@ -4,6 +4,9 @@
     <parameter name="a" value="sd"></parameter>
 
     <test preserve-order="false" name="practiceTest">
+        <packages>
+            <package name="org.example"></package>
+        </packages>
         <groups>
             <run>
                 <include name="sanity"/>
