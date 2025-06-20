@@ -1,5 +1,9 @@
 package org.example;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
@@ -45,4 +49,18 @@ public class TestngTest {
     public void testDataProviderStatic(int s, int u){
         System.out.println(s+u);
     }
+
+    @Test
+    public void webTest(){
+        System.out.println( "Hello World!" );
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options= new ChromeOptions();
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        options.addArguments("--start-maximized");
+        WebDriver driver = new ChromeDriver(options);
+        driver.get("https://demo.nopcommerce.com/");
+        System.out.println("Current url : " + driver.getCurrentUrl());
+        Assert.assertTrue(driver.getCurrentUrl().equals("https://demo.nopcommerce.com/"));
+    }
+
 }

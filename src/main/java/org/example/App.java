@@ -97,6 +97,9 @@ public class App
 //            maxProduct(new int [] {1, 5, 3, -78, 52, 90,  5, 55, 4, 2, 0, -67});
 //        findConsecutiveOnes(new int [] {0, 0,0,0,0,0,0, 1, 0, 0, 0, 1,1,1,1, 0, 1,1});
 //        reverseArrayInGroup(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 11);
+
+//        testng '**/target/surefire-reports/TEST-*.xml'
+//        archiveArtifacts 'target/*.jar'
     }
 
     public static boolean isPrime(int x){
