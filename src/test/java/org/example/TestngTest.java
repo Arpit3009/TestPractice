@@ -57,6 +57,7 @@ public class TestngTest {
         ChromeOptions options= new ChromeOptions();
         options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
         options.addArguments("--start-maximized");
+        options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://demo.nopcommerce.com/");
         System.out.println("Current url : " + driver.getCurrentUrl());
