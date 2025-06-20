@@ -23,80 +23,80 @@ public class App
 
 
     public static void main( String[] args ) throws InterruptedException, IOException {
-//        System.out.println( "Hello World!" );
-//        WebDriverManager.chromedriver().setup();
-//        ChromeOptions options= new ChromeOptions();
-//        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-//        options.addArguments("--start-maximized");
-//        driver = new ChromeDriver(options);
-//        driver.get("https://demo.nopcommerce.com/");
+        System.out.println( "Hello World!" );
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions options= new ChromeOptions();
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+        options.addArguments("--start-maximized");
+        driver = new ChromeDriver(options);
+        driver.get("https://demo.nopcommerce.com/");
 ////        driver.manage().window().maximize();
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //        land = new LandingPage(driver);
-//        capage = new CaptchaPage(driver);
-//        land.takeScreenshot();
-//        land.takeCompleteScreenshot();
-//        System.out.println(land.isBothElementDisplayed());
-//        System.out.println(land.refreshBrowserUsingActionClass());
-//        capage.handleCaptcha();
-//        OverridingClss1 obj = new OverridingClss1();
-//        obj.xyz();
-
-//        System.out.println(isPrime(13));
-//        swapNumberWithout(4,5);
-//        swapStringWithout("cat", "dog");
-//        System.out.println(thirdLargestNumber(new int [] {1, 4, 8, 3, 5, 33, 60, 56}));
-//        System.out.println(getDay(5));
-//        System.out.println(getDay(2));
-//        printPattern1(5);
-//        printPattern2(5);
-//        printPattern3(5);
-//        printPattern4(5);
-//        printPattern5(5);
-//        printPattern6(5);
-//        printPattern7(5);
-//        printPattern8(5);
-//        System.out.println(removeDuplicateChar("hvbshmbs"));
-//        System.out.println(reverseStringWithout("cat"));
-//        swapStringUsingSubstring("cat", "dog");
-//        printButterfly(4);
-//        pattern11(5);
-//        pattern12(5);
-//        pattern13(5);
-//        pattern14(5);
-//        String s1 = new String("ag");
-//        String s2 = new String("ag");
-//        System.out.println(s1==s2);
-
-//        File file = new File(System.getProperty("user.dir")+"/abc.txt");
-//        new File(System.getProperty("user.dir")+"/testFolder").mkdir();
-//        File ff = new File(System.getProperty("user.dir")+"/testFolder");
-//        System.out.println(ff.isDirectory());
-//        System.out.println(ff.listFiles().length);
-//        if(file.createNewFile()){
-//            System.out.println("file created");
-//        }
-//        else{
-//            System.out.println("file exists");
-//        }
+////        capage = new CaptchaPage(driver);
+////        land.takeScreenshot();
+////        land.takeCompleteScreenshot();
+////        System.out.println(land.isBothElementDisplayed());
+////        System.out.println(land.refreshBrowserUsingActionClass());
+////        capage.handleCaptcha();
+////        OverridingClss1 obj = new OverridingClss1();
+////        obj.xyz();
 //
-//        FileWriter writer = new FileWriter(file, true);
-//        BufferedWriter bf = new BufferedWriter(writer);
-//        writer.write("kjfbkj\n");
-//        bf.newLine();
-//        writer.write("text\n");
-//        writer.write("again");
-//        writer.close();
+////        System.out.println(isPrime(13));
+////        swapNumberWithout(4,5);
+////        swapStringWithout("cat", "dog");
+////        System.out.println(thirdLargestNumber(new int [] {1, 4, 8, 3, 5, 33, 60, 56}));
+////        System.out.println(getDay(5));
+////        System.out.println(getDay(2));
+////        printPattern1(5);
+////        printPattern2(5);
+////        printPattern3(5);
+////        printPattern4(5);
+////        printPattern5(5);
+////        printPattern6(5);
+////        printPattern7(5);
+////        printPattern8(5);
+////        System.out.println(removeDuplicateChar("hvbshmbs"));
+////        System.out.println(reverseStringWithout("cat"));
+////        swapStringUsingSubstring("cat", "dog");
+////        printButterfly(4);
+////        pattern11(5);
+////        pattern12(5);
+////        pattern13(5);
+////        pattern14(5);
+////        String s1 = new String("ag");
+////        String s2 = new String("ag");
+////        System.out.println(s1==s2);
 //
-//        FileReader fr = new FileReader(file);
-//        BufferedReader br = new BufferedReader(fr);
-//        String line;
-//        while((line = br.readLine())!= null){
-//            System.out.println(line);
-//        }
-            maxProduct(new int [] {1, 5, 3, -78, 52, 90,  5, 55, 4, 2, 0, -67});
-        findConsecutiveOnes(new int [] {0, 0,0,0,0,0,0, 1, 0, 0, 0, 1,1,1,1, 0, 1,1});
-        reverseArrayInGroup(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 11);
+////        File file = new File(System.getProperty("user.dir")+"/abc.txt");
+////        new File(System.getProperty("user.dir")+"/testFolder").mkdir();
+////        File ff = new File(System.getProperty("user.dir")+"/testFolder");
+////        System.out.println(ff.isDirectory());
+////        System.out.println(ff.listFiles().length);
+////        if(file.createNewFile()){
+////            System.out.println("file created");
+////        }
+////        else{
+////            System.out.println("file exists");
+////        }
+////
+////        FileWriter writer = new FileWriter(file, true);
+////        BufferedWriter bf = new BufferedWriter(writer);
+////        writer.write("kjfbkj\n");
+////        bf.newLine();
+////        writer.write("text\n");
+////        writer.write("again");
+////        writer.close();
+////
+////        FileReader fr = new FileReader(file);
+////        BufferedReader br = new BufferedReader(fr);
+////        String line;
+////        while((line = br.readLine())!= null){
+////            System.out.println(line);
+////        }
+//            maxProduct(new int [] {1, 5, 3, -78, 52, 90,  5, 55, 4, 2, 0, -67});
+//        findConsecutiveOnes(new int [] {0, 0,0,0,0,0,0, 1, 0, 0, 0, 1,1,1,1, 0, 1,1});
+//        reverseArrayInGroup(new int[]{1, 2, 3, 4, 5, 6, 7, 8}, 11);
     }
 
     public static boolean isPrime(int x){
@@ -270,8 +270,8 @@ public class App
     }
 
     public static List<Character> getDuplicateChar(String str){
-        Map<Character, Integer> map = new HashMap<>();
-        List<Character> li = new ArrayList<>();
+        Map<Character, Integer> map = new HashMap<Character, Integer>();
+        List<Character> li = new ArrayList<Character>();
         for(int i =0; i<str.length(); i++){
             if(map.containsKey(str.charAt(i))){
                 map.put(str.charAt(i), map.get(str.charAt(i))+1);
@@ -288,7 +288,7 @@ public class App
     }
 
     public static String removeDuplicateChar(String str){
-        Map<Character, Integer> map = new HashMap<>();
+        Map<Character, Integer> map = new HashMap<Character, Integer>();
         String st = "";
         for(int i =0; i<str.length(); i++){
             if(!map.containsKey(str.charAt(i))){

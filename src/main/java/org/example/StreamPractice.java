@@ -18,6 +18,6 @@ public class StreamPractice {
         System.out.println(li2);
         List<Integer> li3 = li.stream().map(i -> i+1).collect(Collectors.toList());
         System.out.println(li3);
-        List<Integer> li4 = (List<Integer>) li.stream().sorted();
+//        List<Integer> li4 = (List<Integer>) li.stream().sorted();
     }
 }
