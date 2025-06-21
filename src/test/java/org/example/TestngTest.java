@@ -64,4 +64,67 @@ public class TestngTest {
         Assert.assertTrue(driver.getCurrentUrl().equals("https://demo.nopcommerce.com/"));
     }
 
+
+
+//    pipeline {
+//        agent any
+//
+//
+//        tools {
+//            maven 'Maven'     // Name must match what you configured in Jenkins (Manage Jenkins → Global Tool Configuration)
+//        }
+//
+//        stages {
+//            // stage('Install Chrome & Driver') {
+//            //     steps {
+//            //         sh '''
+//            //             apt-get update
+//            //             apt-get install -y chromium-browser unzip wget
+//            //             wget https://storage.googleapis.com/chrome-for-testing-public/114.0.5735.90/linux64/chromedriver-linux64.zip
+//            //             unzip chromedriver-linux64.zip
+//            //             chmod +x chromedriver-linux64/chromedriver
+//            //             mv chromedriver-linux64/chromedriver /usr/local/bin/
+//            //         '''
+//            //     }
+//            // }
+//
+//
+//            stage('Build') {
+//                agent {
+//                    docker { image 'selenium/standalone-chrome:with-node'
+//
+//                    }
+//                }
+//                steps {
+//                    // Get some code from a GitHub repository
+//                    git 'https://github.com/Arpit3009/TestPractice.git'
+//
+//                    // Run Maven on a Unix agent.
+//                    // sh "mvn -Dmaven.test.failure.ignore=true clean package"
+//                    sh "mvn clean test"
+//
+//                    // To run Maven on a Windows agent, use
+//                    // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+//                }
+//
+//
+//                post {
+//                    // If Maven was able to run the tests, even if some of the test
+//                    // failed, record the test results and archive the jar file.
+//                    success {
+//                        junit '**/target/surefire-reports/TEST-*.xml'
+//                        // archiveArtifacts 'target/*.jar'
+//                    }
+//                }
+//            }
+//            stage('Publish TestNG Report') {
+//                steps {
+//                    // testNG reportFilenamePattern: '**/test-output/*.xml'
+//                    archiveArtifacts artifacts: 'test-output/**/*.*', allowEmptyArchive: true
+//                }
+//            }
+//
+//        }
+//    }
+
 }
