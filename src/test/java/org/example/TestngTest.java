@@ -133,4 +133,104 @@ public class TestngTest {
 //    wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 //    apt-get install -y ./google-chrome-stable_current_amd64.deb
 
+
+    //Parameterized pipeline
+
+//    pipeline {
+//        agent any
+//
+//        parameters {
+//            choice(name: 'PIPELINE_TO_RUN', choices: ['None', 'testingRepo', 'testingRepo2', 'gh'], description: 'Choose pipeline to trigger')
+//        }
+//
+//        stages {
+//            stage('Trigger Selected Pipeline') {
+//                steps {
+//                    script {
+//                        if (params.PIPELINE_TO_RUN == 'testingRepo') {
+//                            build job: 'testingRepo'
+//                        } else if (params.PIPELINE_TO_RUN == 'testingRepo2') {
+//                            build job: 'testingRepo2'
+//                        } else if (params.PIPELINE_TO_RUN == 'gh') {
+//                            build job: 'gh'
+//                        } else {
+//                            echo 'No pipeline selected.'
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+
+
+    //Multiple pipeline in one
+
+//    pipeline {
+//        agent any
+//
+//        stages {
+//            stage('Build Project A') {
+//                steps {
+//                    build job: 'testingRepo'
+//                }
+//            }
+//            stage('Build Project B') {
+//                steps {
+//                    build job: 'testingRepo2'
+//                }
+//            }
+//            stage('Build Project C') {
+//                steps {
+//                    build job: 'gh'
+//                }
+//            }
+//        }
+//    }
+
+
+    //run pipeline on user approval
+//    pipeline {
+//        agent any
+//
+//        stages {
+//            stage('Trigger Pipeline A') {
+//                steps {
+//                    echo 'Running Pipeline A...'
+//                    build job: 'testingRepo'
+//                }
+//            }
+//
+//            stage('Wait for Approval Before B') {
+//                steps {
+//                    input message: 'Run Pipeline B?', ok: 'Proceed'
+//                }
+//            }
+//
+//            stage('Trigger Pipeline B') {
+//                steps {
+//                    echo 'Running Pipeline B...'
+//                    build job: 'testingRepo2'
+//                }
+//            }
+//
+//            stage('Wait for Approval Before C') {
+//                steps {
+//                    input message: 'Run Pipeline C?', ok: 'Proceed'
+//                }
+//            }
+//
+//            stage('Trigger Pipeline C') {
+//                steps {
+//                    echo 'Running Pipeline C...'
+//                    build job: 'gh'
+//                }
+//            }
+//        }
+//    }
+
+
+
+
+
+
 }
