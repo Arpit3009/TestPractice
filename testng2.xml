@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" data-provider-thread-count="2">
+    <parameter name="a" value="sd"></parameter>
+
+    <test preserve-order="false" name="practiceTest">
+        <packages>
+            <package name="org.example"></package>
+        </packages>
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="sanity"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+        <classes>
+            <class name="org.example.TestngTest">
+
+                <methods>
+                    <include name="firstTest"/>
+                    <include name="afirstTesta"/>
+                    <include name="afirstTestb"/>
+                    <include name="testDataProvider"/>
+                    <include name="testDataProviderStatic"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
